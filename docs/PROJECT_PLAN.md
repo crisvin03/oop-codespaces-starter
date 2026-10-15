@@ -1,16 +1,68 @@
-# My PHP OOP semester project plan (student to complete)
+# PHP OOP Semester Project Plan
 
-- **Full name / section:**
-- **Own selected project title:**
-- **Real-world problem (2 sentences):**
-- **Project purpose (1–2 sentences):**
-- **Model class name + 2 meaningful fields:**
-- **Service class + what it does:**
-- **Report class + what it does:**
-- **PDO table name and columns for Week 12:**
-- **First two sample records (fictional data only):**
-- **MVC route, controller, and Blade view:**
-- **Tests planned for Week 15:**
-- **Source repository URL:**
+**Student Information:**
+- Full Name:
+- Section:
 
-Keep your project topic consistent across all course weeks. Your chosen topic must be a real adaptation, not the exact default Sample A/B or Book demo.
+## Project Overview
+
+**Project Title:**
+
+**Real-World Problem Statement (2-3 sentences):**
+
+
+**Project Purpose and Objectives (2-3 sentences):**
+
+
+## Technical Architecture
+
+**Primary Model Class:**
+- Class Name:
+- Key Field 1:
+- Key Field 2:
+
+**Service Class Implementation:**
+- Class Name:
+- Primary Responsibility:
+
+**Report Class Implementation:**
+- Class Name:
+- Primary Responsibility:
+
+## Database Design (Week 12)
+
+**PDO Table Specification:**
+- Table Name:
+- Column Definitions:
+
+**Sample Data (Two Fictional Records):**
+
+1. Record 1:
+
+
+2. Record 2:
+
+
+## MVC Implementation (Week 13)
+
+**Route Definition:**
+
+**Controller:**
+
+**Blade View Template:**
+
+## Quality Assurance (Week 15)
+
+**Planned Tests:**
+
+1. Test 1:
+
+2. Test 2:
+
+## Repository Information
+
+**Source Repository URL:**
+
+---
+
+**Important:** Maintain consistent project topic throughout all course weeks (11-17). Your selected domain must represent an original adaptation and cannot duplicate the default demonstration examples.

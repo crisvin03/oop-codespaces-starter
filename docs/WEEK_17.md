@@ -1,34 +1,111 @@
-# Week 17 — Final Project Development and Presentation
+# Week 17 — Final Project Integration and Presentation
 
-**Syllabus coverage:** Project Integration · Software Demonstration · Technical Documentation and Presentation.
+**Syllabus Coverage:** Project Integration · Software Demonstration · Technical Documentation and Presentation
 
-Your final project must evolve from **your own topic selected in Week 11**, not merely from the instructor's Library or Inventory example.
+**Critical Requirement:** Your final project must represent original work based on **your own topic selected in Week 11**. Projects that merely duplicate the instructor's Library or Inventory demonstration do not satisfy this requirement.
 
-## Required integrated features
+## Required Integrated Features
 
-1. A clear, specific project problem and brief introduction.
-2. Three or more meaningful OOP classes with properly organized namespaces and one documented `use ... as ...` alias.
-3. Working Composer PSR-4 autoloading (`App\\` → `app/`).
-4. A direct PDO repository for your topic performing **Create, Read, Update and Delete with parameterized SQL**.
-5. A browser page demonstrating **Model–View–Controller** and appropriate reusable services.
-6. At least **two topic-specific records** and a database that persists between browser requests.
-7. Tests covering your business rules/data operations, plus an example of debugging or error logging.
-8. Reasonable coding consistency (Pint / PSR practices), documentation, and Git commit history.
+Your completed project must demonstrate the following:
 
-## Suggested live demonstration flow (5–8 minutes)
+1. **Problem Definition:**
+   - Clear, specific problem statement
+   - Brief introduction explaining real-world context
 
-1. Introduce the project title, real-world problem, and purpose.
-2. Identify classes, namespaces, alias and PSR-4 in `composer.json`.
-3. Demonstrate saving two records, editing one, deleting another using your own interface.
-4. Trace one request from route to controller to repository/service to Blade.
-5. Run `php artisan test` and explain one automated test.
-6. Run `./vendor/bin/pint --test` and show recent meaningful Git commits.
-7. Briefly explain a debugging challenge and how you fixed it.
+2. **Object-Oriented Architecture:**
+   - Minimum of three meaningful OOP classes with properly organized namespaces
+   - One documented `use ... as ...` alias implementation
+   - Working Composer PSR-4 autoloading (`App\\` → `app/`)
 
-## Written submission
+3. **Database Layer:**
+   - Direct PDO repository for your domain
+   - Complete **Create, Read, Update, and Delete** operations
+   - Parameterized SQL preventing injection vulnerabilities
 
-- Complete [`docs/PROJECT_PLAN.md`](PROJECT_PLAN.md) and [`docs/PROJECT_REPORT_TEMPLATE.md`](PROJECT_REPORT_TEMPLATE.md) (save a copy named `PROJECT_REPORT.md` with your real information).
-- Follow [`FINAL_SUBMISSION_CHECKLIST.md`](FINAL_SUBMISSION_CHECKLIST.md).
-- Submit the repository URL, screenshots, and documentation through the instructor's LMS. If private, invite your instructor with suitable repository access. Do not include secrets or private personal data.
+4. **Web Application:**
+   - Browser interface demonstrating **Model–View–Controller** architecture
+   - Appropriate reusable service implementations
+   - Minimum of **two domain-specific records**
+   - Database persistence across browser requests
 
-**Reminder:** This is a suggested practical project brief aligned to the syllabus, not a replacement for your instructor's official final-project grading policy.
+5. **Quality Assurance:**
+   - Minimum of two tests covering business rules or data operations
+   - Evidence of debugging or error logging implementation
+
+6. **Professional Standards:**
+   - Reasonable coding consistency (Pint / PSR practices)
+   - Comprehensive documentation
+   - Meaningful Git commit history
+
+## Live Demonstration Guidelines
+
+### Presentation Format (5–8 minutes)
+
+Structure your demonstration using the following sequence:
+
+1. **Introduction (30-60 seconds):**
+   - State project title
+   - Describe real-world problem addressed
+   - Explain project purpose and intended users
+
+2. **Technical Architecture (1-2 minutes):**
+   - Identify key classes, namespaces, and aliasing
+   - Show PSR-4 configuration in `composer.json`
+
+3. **Functional Demonstration (2-3 minutes):**
+   - Create two domain-specific records through your interface
+   - Update one existing record
+   - Delete another record
+   - Verify changes persist in database
+
+4. **Code Walkthrough (1-2 minutes):**
+   - Trace one complete request flow:
+     - Route definition
+     - Controller invocation
+     - Repository/Service interaction
+     - Blade template rendering
+
+5. **Quality Assurance (1-2 minutes):**
+   - Execute `php artisan test` and explain one automated test
+   - Run `./vendor/bin/pint --test` to verify coding standards
+   - Display recent, meaningful Git commits
+
+6. **Challenges and Solutions (30-60 seconds):**
+   - Briefly explain one significant debugging challenge encountered
+   - Describe resolution approach
+
+## Written Submission Requirements
+
+### Required Documentation
+
+1. Complete [`docs/PROJECT_PLAN.md`](PROJECT_PLAN.md) with your project specifications
+
+2. Generate final technical report:
+   - Copy [`docs/PROJECT_REPORT_TEMPLATE.md`](PROJECT_REPORT_TEMPLATE.md)
+   - Save as `docs/PROJECT_REPORT.md`
+   - Complete all sections with your actual project information
+
+3. Review and verify completion of [`FINAL_SUBMISSION_CHECKLIST.md`](FINAL_SUBMISSION_CHECKLIST.md)
+
+### Submission Deliverables
+
+Submit the following through your instructor's designated LMS:
+
+- Repository URL (with appropriate instructor access for private repositories)
+- Screenshots demonstrating:
+  - Working browser interface
+  - Terminal test execution
+  - Key project code sections
+- Completed documentation files
+
+### Security and Privacy
+
+**Important:** Ensure your submission excludes:
+- Authentication secrets or API keys
+- Personally identifiable information
+- Database credentials
+- `.env` files
+
+---
+
+**Disclaimer:** This document provides a suggested practical project implementation aligned with syllabus requirements. It does not replace your instructor's official final project grading policy or institutional assessment rubric.

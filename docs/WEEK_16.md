@@ -1,14 +1,36 @@
 # Week 16 — Software Quality and Best Practices
 
-**Syllabus coverage:** Coding Standards (PSR) · Code Refactoring · Version Control with Git (Introduction).
+**Syllabus Coverage:** PSR Coding Standards · Code Refactoring Principles · Version Control with Git (Introduction)
 
-## Instructor demonstration
+## Instructor Demonstration
 
-1. Read `composer.json` PSR-4 and [PHP-FIG PSR-4](https://www.php-fig.org/psr/psr-4/). Discuss how file case and namespace structure affect autoloading.
-2. Run `./vendor/bin/pint --test`. Pint checks coding style (Laravel conventions based on PSR-related standards). If it reports formatting differences, run `./vendor/bin/pint`, review `git diff`, and then re-run tests.
-3. Demonstrate safe refactoring: extract duplicate record formatting from a controller into a service without changing visible output.
-4. Open Codespaces terminal and run:
+The following demonstration illustrates software quality practices:
 
+1. **PSR Standards Review:**
+   - Examine `composer.json` for PSR-4 autoloading configuration
+   - Review [PHP-FIG PSR-4 Specification](https://www.php-fig.org/psr/psr-4/)
+   - Discuss impact of file case sensitivity and namespace structure on autoloading
+
+2. **Code Style Verification:**
+   ```bash
+   ./vendor/bin/pint --test
+   ```
+   Pint checks coding style compliance (Laravel conventions based on PSR standards)
+   
+   If formatting differences are reported:
+   ```bash
+   ./vendor/bin/pint
+   git diff  # Review changes before committing
+   php artisan test  # Verify functionality preserved
+   ```
+
+3. **Refactoring Exercise:**
+   - Demonstrate safe refactoring technique: extract duplicate record formatting logic from controller into service layer
+   - Verify that visible output remains unchanged
+   - Confirm that responsibilities remain properly separated
+
+4. **Version Control Operations:**
+   Open a Codespaces terminal and execute:
    ```bash
    git status
    git diff
@@ -17,19 +39,58 @@
    git push
    ```
 
-   The instructor should teach Git configuration/first push separately if a learner's authentication requires it; Codespaces usually provides repo credentials.
+**Note:** Git configuration and initial authentication setup should be taught separately if student credentials require configuration. GitHub Codespaces typically provides repository credentials automatically.
 
-## Your same-topic project
+## Student Project Development
 
-1. Find at least one repeated or oversized method in your project.
-2. Refactor it to a reusable method or class. Keep model/SQL/view responsibilities separate.
-3. Run `./vendor/bin/pint --test` then fix formatting; run `php artisan test` after refactoring.
-4. Compare the before/after behavior and demonstrate that the functionality still works.
-5. Make at least **two meaningful Git commits** representing separate milestones; don't commit `.env`, database files, or vendor dependencies.
+**Continuity Requirement:** Continue with your established project topic.
 
-## Evidence
+### Implementation Requirements
 
-- [ ] Description of the refactor (before/after)
-- [ ] Pint check and test results
-- [ ] Git commit history showing separate milestones
-- [ ] No hardcoded secrets or personal data
+1. **Code Review:**
+   - Identify minimum of one repeated or oversized method in your project
+   - Candidates for refactoring:
+     - Duplicate logic across multiple methods
+     - Methods exceeding 20-30 lines
+     - Complex conditional logic
+
+2. **Refactoring Implementation:**
+   - Extract identified code into reusable method or class
+   - Maintain clear separation of concerns:
+     - **Model:** Data representation
+     - **Repository:** Database operations
+     - **Service:** Business logic
+     - **View:** Presentation layer
+
+3. **Quality Verification:**
+   ```bash
+   ./vendor/bin/pint --test  # Check style compliance
+   ./vendor/bin/pint         # Apply automatic formatting
+   php artisan test          # Verify functionality preserved
+   ```
+
+4. **Behavioral Verification:**
+   - Compare before-and-after behavior
+   - Demonstrate that functionality remains unchanged
+   - Document any improvements in code clarity or reusability
+
+5. **Version Control:**
+   - Create minimum of **two meaningful Git commits** representing distinct development milestones
+   - Examples of appropriate commit boundaries:
+     - "Refactor service layer extraction"
+     - "Add unit tests for refactored methods"
+   - **Exclusions:** Do not commit:
+     - `.env` files
+     - Database files
+     - `vendor/` directory
+     - Credentials or secrets
+
+## Deliverables
+
+Complete the following checklist:
+
+- [ ] Description of refactoring performed (before and after comparison)
+- [ ] Pint style check results
+- [ ] Test execution results demonstrating preserved functionality
+- [ ] Git commit history showing separate development milestones
+- [ ] Confirmation that no hardcoded secrets or personal data are committed

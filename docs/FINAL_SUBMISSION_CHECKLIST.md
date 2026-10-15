@@ -1,21 +1,30 @@
-# Week 17 — Final submission checklist (student)
+# Week 17 — Final Submission Checklist
 
-- [ ] Project topic clearly differs from default library/inventory sample
-- [ ] Repository belongs to student and instructor can view it
-- [ ] `app/StudentProject/` demonstrates model, service, report (+ controller)
-- [ ] All namespaces and file names match PSR-4 mapping
-- [ ] `use` import and at least one class alias used correctly
-- [ ] `php artisan oop:project` displays two own-topic records
-- [ ] Direct PDO CRUD and parameterized prepared statements on own data
-- [ ] Persistent SQLite database working across web requests
-- [ ] MVC browser page includes two records from own topic
-- [ ] At least two automated tests and terminal output screenshot
-- [ ] Debugging/logging evidence without sensitive values
-- [ ] Pint/PSR style checked and Git commits made during development
-- [ ] `docs/PROJECT_PLAN.md` completed
-- [ ] `docs/PROJECT_REPORT.md` produced from template
-- [ ] Screenshots of working browser UI, terminal and project code
-- [ ] No `.env`, personal information, database files, or `vendor/` committed
-- [ ] Link and files submitted as directed by the instructor's LMS
+Use this checklist to verify completion of all required project components before submission.
 
-This checklist is a suggested implementation of syllabus Week 17, not an official institutional rubric.
+## Project Requirements
+
+- [ ] **Original Topic:** Project domain clearly differs from default library/inventory demonstration
+- [ ] **Repository Access:** Repository belongs to student with appropriate instructor viewing permissions
+- [ ] **Code Structure:** `app/StudentProject/` contains Model, Service, Report, and Controller implementations
+- [ ] **PSR-4 Compliance:** All namespaces and file names conform to PSR-4 autoloading specifications
+- [ ] **Import Statements:** Correct use of `use` declarations with at least one class alias documented
+- [ ] **Command Output:** `php artisan oop:project` successfully displays two domain-specific records
+- [ ] **Database Implementation:** Direct PDO CRUD operations with parameterized prepared statements on project data
+- [ ] **Data Persistence:** SQLite database maintains state across web requests
+- [ ] **MVC Interface:** Browser page displays two records from project domain following MVC architecture
+- [ ] **Test Coverage:** Minimum of two automated tests with terminal output screenshot
+- [ ] **Debugging Evidence:** Debugging or logging implementation documented (excluding sensitive values)
+- [ ] **Code Quality:** PSR style verification via Pint with Git commits demonstrating development progression
+- [ ] **Project Plan:** `docs/PROJECT_PLAN.md` completed with all required sections
+- [ ] **Technical Report:** `docs/PROJECT_REPORT.md` generated from template with comprehensive information
+- [ ] **Visual Documentation:** Screenshots included showing:
+  - Working browser interface
+  - Terminal command output
+  - Relevant project code sections
+- [ ] **Security Compliance:** No `.env` files, personal information, database files, or `vendor/` directory committed to repository
+- [ ] **Submission:** Repository link and required files submitted according to instructor's LMS specifications
+
+---
+
+**Note:** This checklist represents a suggested implementation framework aligned with syllabus Week 17 requirements. It does not constitute an official institutional grading rubric.
